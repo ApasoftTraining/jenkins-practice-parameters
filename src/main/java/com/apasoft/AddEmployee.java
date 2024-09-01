@@ -18,10 +18,5 @@ public class AddEmployee {
         System.out.println("Code:"+newEmployee.getCode());
         System.out.println("Name:"+newEmployee.getName());
         System.out.println("Age:"+newEmployee.getAge());
-
-
-         
-
-
     }
 }
