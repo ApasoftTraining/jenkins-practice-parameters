@@ -37,6 +37,7 @@ public class EmployeeManagementApp {
     }
 
     private static void addEmployee(String[] args) {
+        
         if (args.length != 4) {
             System.out.println("Usage: add <code> <name> <age>");
             return;
@@ -44,11 +45,12 @@ public class EmployeeManagementApp {
         String code = args[1];
         String name = args[2];
         int age = Integer.parseInt(args[3]);
-        employees.add(new Employee(code, name, age));
+        Employee emp=new Employee(code, name, age)
+        employees.add(emp);
         System.out.println("Employee added successfully.");
-        System.out.println("Code:"+newEmployee.getCode());
-        System.out.println("Name:"+newEmployee.getName());
-        System.out.println("Age:"+newEmployee.getAge());
+        System.out.println("Code:"+emp.getCode());
+        System.out.println("Name:"+emp.getName());
+        System.out.println("Age:"+emp.getAge());
     }
 
     private static void removeEmployee(String[] args) {
