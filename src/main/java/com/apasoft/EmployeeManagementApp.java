@@ -45,7 +45,7 @@ public class EmployeeManagementApp {
         String code = args[1];
         String name = args[2];
         int age = Integer.parseInt(args[3]);
-        Employee emp=new Employee(code, name, age)
+        Employee emp=new Employee(code, name, age);
         employees.add(emp);
         System.out.println("Employee added successfully.");
         System.out.println("Code:"+emp.getCode());
