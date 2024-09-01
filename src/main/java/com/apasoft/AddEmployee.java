@@ -14,9 +14,10 @@ public class AddEmployee {
 
         Employee newEmployee = new Employee(code, name, age);
         employees.add(newEmployee);
-        System.out.println("Employee added successfully.");
         System.out.println("Code:"+newEmployee.getCode());
         System.out.println("Name:"+newEmployee.getName());
         System.out.println("Age:"+newEmployee.getAge());
+        System.out.println("Employee added successfully.");
+        
     }
 }
